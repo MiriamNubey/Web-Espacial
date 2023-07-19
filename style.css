@@ -1,0 +1,65 @@
+body{
+    background-color:#E2CFEA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tittle-web{
+    font-size: 90px ;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #25244A;
+    text-align: center;
+    text-shadow: 2px 2px 4px #CA92D8;
+}
+
+.referencias{
+    font-size: 30px;
+}
+.ref-astro{
+    margin: 0 95px 
+}
+
+.ref-univer{
+    margin: 0 100px 0 100px;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 240px;
+    border-radius: 30px;
+}
+
+.saturno{
+    width: 240px;
+    margin: 0 10px 0 10px;
+}
+
+.luna{
+    width: 240px;
+    margin: 0 10px 0 10px;
+}
+
+.nubes{
+    width: 240px;
+    margin: 0 10px 0 10px; 
+}
+
+.tittle-astrobiologia{
+    font-size: 40px;
+}
+
+.tittle-origen{
+    font-size: 40px;
+}
+
+.tittle-estrella{
+    font-size: 40px;
+}
+
+/*
+selector{
+    propiedad: valor;
+}
+*/
