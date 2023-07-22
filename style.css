@@ -1,65 +1,264 @@
 body{
-    background-color:#E2CFEA;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background-image: url(/images/espacio_fondo.jpg); 
+    font-size: 13px;
+	line-height: 1.5em;
 }
 
-.tittle-web{
-    font-size: 90px ;
-    font-family: 'Chakra Petch', sans-serif;
-    color: #25244A;
-    text-align: center;
-    text-shadow: 2px 2px 4px #CA92D8;
-}
-
-.referencias{
-    font-size: 30px;
-}
-.ref-astro{
-    margin: 0 95px 
-}
-
-.ref-univer{
-    margin: 0 100px 0 100px;
-}
-
-.contenedor-img{
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #e2cae8;
     display: flex;
+    justify-content: space-between;
+}
+
+header div .web-name{
+    padding-left: 20px;
+    color: #392759;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-r{
+    list-style: none;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-img{
-    width: 240px;
-    border-radius: 30px;
+
+header nav .nav-r button{
+    margin-right: 25px;
+    color: white;
+    background: transparent;
+    border: 2px solid #392759;
+    border-radius: 6px;border: none;
+    color: #392759;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    padding: 8px 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+}
+header nav .nav-r button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #392759;
 }
 
-.saturno{
-    width: 240px;
-    margin: 0 10px 0 10px;
+header nav .nav-r button:hover {
+    background-color: #392759;
+    color: white;
 }
 
-.luna{
-    width: 240px;
-    margin: 0 10px 0 10px;
+
+.first-section {
+    box-sizing: border-box;
+	background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3%;
 }
 
-.nubes{
-    width: 240px;
-    margin: 0 10px 0 10px; 
+.slider-box{
+    width: 900px;
+    height: 400px;
+    margin: 50px auto 50px;
+    overflow: hidden;
 }
 
-.tittle-astrobiologia{
-    font-size: 40px;
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
-.tittle-origen{
-    font-size: 40px;
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
 }
 
-.tittle-estrella{
-    font-size: 40px;
+.text {
+    background-color:#A997DF;
+    position: absolute;
+    padding: 0 50px;
+    top: 50px;
+    color:#392759; 
 }
 
-/*
-selector{
-    propiedad: valor;
+.text h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Jost', sans-serif;
 }
-*/
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.tittle{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #392F5A;
+    padding-top: 30px;
+}
+
+.subtitulo{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    color: rgb(48, 48, 48);
+    font-size: 25px;
+}
+
+.parrafo{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    color: rgb(48, 48, 48);
+    font-size: 17px;
+}
+
+.second-section{
+    box-sizing: border-box;
+    background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3%;
+}
+
+.third-section{
+    box-sizing: border-box;
+    background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3%;
+}
+
+.four-section{
+    box-sizing: border-box;
+    background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3%;
+}
+
+.five-section{
+    box-sizing: border-box;
+    background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3%;
+}
+
+.six-section{
+    box-sizing: border-box;
+    background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3%;
+}
+
+label{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    color: rgb(48, 48, 48);
+    font-size: 16.8px
+}
+
+button{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+
+}
+
+label .come{
+    width: 800px;
+    height: 40px;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #e2cae8;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(70, 69, 69);
+    font-size: 15px;
+
+}
+footer .footer-left{
+    justify-content: left;
+}
+
+footer .footer-right{
+    justify-content: right;
+    padding-right: 25px;
+}

@@ -1,140 +1,184 @@
-<!-- DOCTYPE - Declaracion de archivo tipo HTML-->
 <!DOCTYPE html>
-<!--lang Lenguaje del sitio-->
 <html lang="en">
-<!--Head (Metadata) - info para el navegador -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Espacial</title>
+    <title>Nebulosas</title>
     <link rel="stylesheet" href="/style.css">
-    <!-- Conectar google fonts con html-->
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/Saturn_01.svg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quantico&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:wght@300&family=Quantico&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/estrella.png">
 </head>
-<!--Body - Lo que el usuarix ve-->
 <body>
-    <!--MAIN - Contenido principal-->
-    <main>
-        <h1 class="tittle-web">Web espacial</h1>
-
-        <!--INDICE CON ANCLAS-->
-        <div class="referencias">
-        <a href="#astrobiologia" class="ref-astro">Astrobiologia</a>
-        
-        <a href="#universo" class="ref-univer">Origen del Universo</a>
-        
-        <a href="#estrellas">Origen de las estrellas</a>
-        </div>
-        <br>
-        <br>
-
-        <!--IMAGEN A TRAVÉS DE LA WEB-->
-        <div class="contenedor-img">
-            <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_eso505-30_pi_2mstr_flat_final.jpg" alt="Baby Stars en la constelacion de Orion">
-            <img class="luna" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/ksc-20220614-ph-jbs01_0332orig.jpg" alt="luna">
-            <img class="nubes" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss069e018147orig.jpg" alt="nube">
-            <!--IMAGEN A TRAVÉS DE LA COMPU-->
-            <img class="saturno" src="/images/saturno.jpg" alt="Saturno">
-        </div>
-        <!--DIV - Crear divisiones -->
-        <br>
-
+    <header>
         <div>
-            <!--LISTAS-->
-            <h3>Top de estrellas mas masivas</h3>
-            <!--OL - LISTAS ORDENADAS -->
-            <ol>
-                <li>R136a1, estrella hipergigante azul</li>
-                <li>Estrella de la Nebulosa Peonía</li>
-                <li>Estrella Pistola</li>
-            </ol>
-
-            <h3>Top de misiones espaciales</h3>
-            <!--UL - LISTA NO ORDENADA -->
-            <ul>
-                <li>Apollo 8</li>
-                <li>Geminis</li>
-                <li>Apollo 11</li>
-                <li>Luna 1</li>
-                <li>Curiosity</li>
-            </ul>
+            <h2 class="web-name">Web Espacial: Nebulosas</h2>
         </div>
-        <!--hr- división horizontal-->
-        <hr>
+        <nav>
+            <ul class="nav-r">
+                <li><button onclick="window.location.href = '#descripcion';">¿Qué son?</button></li>
+                <li><button onclick="window.location.href = '#formacion';">¿Cómo se forman?</button></li>
+                <li><button onclick="window.location.href = '#tipos';">Tipos de nebulosa</button></li>
+                <li><button onclick="window.location.href = '#examen';">Examen</button></li>
+                <!--<li><button onclick="window.location.href = '#galeria';">Galeria de imagenes</button></li>-->
+            </ul>
+        </nav>
+    </header>
 
-        <h3 class="tittle-astrobiologia" id="astrobiologia">Astrobiologia</h3>
-        <p class="parrafo-astro">
-            La astrobiología es el estudio de los orígenes, evolución, distribución y futuro de la vida en el universo. Este campo interdisciplinario requiere una comprensión integral e integrada de los fenómenos biológicos, geológicos, planetarios y cósmicos. La astrobiología abarca la búsqueda de entornos habitables en nuestro sistema solar y en planetas alrededor de otras estrellas; la búsqueda de evidencia de química prebiótica o vida en cuerpos del sistema solar como Marte, la luna Europa de Júpiter y la luna Titán de Saturno; e investigación sobre el origen, la evolución temprana y la diversidad de la vida en la Tierra. Los astrobiólogos abordan tres preguntas fundamentales: ¿Cómo comienza y evoluciona la vida? ¿Existe vida en otros lugares del universo? ¿Cuál es el futuro de la vida en la Tierra y más allá?
-            ¿Estamos solos en el Universo? ¿Somos únicos en el Universo o somos nosotros parte de una sociedad cósmica? Éstas son las preguntas más antiguas que la humanidad se a preguntado desde la primera vez que el ser humano miro hacia el cielo. El esfuerzo de la Astrobiología de NASA busca contestar estas preguntas.
-            Astrobiología es el estudio de la vida en el Universo. Proporciona una perspectiva biológica a varias áreas de investigación de NASA, relacionando tal esfuerzo como la búsqueda de planetas habitables, las misiones de la exploración a Marte y Europa, son los esfuerzos para entender el origen de la vida, y de la planificación para el futuro de la vida más allá de la Tierra.
-            <!--br-BREAK/ENTER-->
+    <main class="main-content">
+        <section class="first-section">
+            <!--Carrusel de imagenes-->
+        <div class="slider-box">
+            <ul>
+                <li>
+                    <img src="https://images8.alphacoders.com/128/1280369.png" alt="">
+                    <div class="text">
+                        <h2>Nebulosas</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="https://images8.alphacoders.com/768/768202.jpg" alt="">
+                    <div class="text">
+                        <h2>¿Qué son las nebulosas?</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="https://images5.alphacoders.com/131/1315108.jpeg" alt="">
+                    <div class="text">
+                        <h2>¿Como se forman las nebulosas?</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="https://images5.alphacoders.com/432/432766.jpg" alt="">
+                    <div class="text">
+                        <h2>Tipos de nebulosas</h2>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <!--Seccion de Descripción General-->
+        <div>
+            <h2 class="tittle">Introducción</h2>
+            <p class="parrafo">Una nebulosa es una nube gigante de polvo y gas en el espacio. Algunas nebulosas provienen del gas y el polvo expulsado por la explosión de una estrella moribunda, como una supernova. Otras nebulosas son regiones donde comienzan a formarse nuevas estrellas. Por esta razón, algunas nebulosas se llaman "viveros de estrellas".</p>
+        </div>
+        </section>
+        
+        <section class="second-section" id="descripcion">
+            <h2 class="tittle">¿Que son las nebulosas?</h2>
+            <p class="parrafo">Las nebulosas son concentraciones de gas y de polvo estelar de aspecto similar a una nube, de colores llamativos. Son importantes para el universo debido a que dentro de algunas de ellas se forman las estrellas (como consecuencia de fenómenos de condensación y agregación de la materia). En otros casos, solo contienen restos de estrellas extintas.</p>
+            <p class="parrafo">Las nebulosas se pueden encontrar en cualquier parte del espacio interestelar. En nuestra galaxia (la Vía Láctea), las nebulosas se encuentran a grandes distancias de la Tierra, que se miden en años luz.</p>
+            <p class="parrafo">Sin embargo, es posible contar con imágenes detalladas en las que se aprecia su majestuosidad, gracias a los científicos que operan con instrumentos complejos y sensibles, como el telescopio espacial Hubble.</p>
+
+        </section>
+
+        <section class="third-section" id="formacion">
+            <h2 class="tittle">¿Cómo se forman las nebulosas?</h2>
+            <p class="parrafo">Están constituidas por concentraciones de gases entre los que predominan el hidrógeno, helio y polvo estelar. <br><br>Las nebulosas se pueden encontrar en las galaxias que son irregulares y en otras de forma aspiralada. Son bastante importante en el Universo, ya que en su interior nacen las estrellas a partir de una condensación y agregación de la materia.</p>
+        </section>
+
+        <section class="four-section" id="tipos">
+            <h2 class="tittle">Tipos de Nebulosas</h2>
+            <h3 class="subtitulo">Nebulosas de reflexión</h3>
+            <p class="parrafo">Son aquellas que reflejan la luz de las estrellas cercanas (estrellas que no emiten suficiente radiación). Presentan colores en tonos azulados debido a la forma en que la luz es dispersada por las partículas de polvo de la nebulosa. Por ejemplo, la nebulosa “Pléyades” (o también llamada “siete hermanas”).</p>
+            <h3 class="subtitulo">Nebulosas de emisión</h3>
+            <p class="parrafo">Son las más comunes, aquellas que emiten luz propia debido a la alteración de los átomos de hidrógeno que reciben la radiación ultravioleta de las estrellas. Por ejemplo, la nebulosa “Omega”.</p>
+            <h3 class="subtitulo">Nebulosas de absorción</h3>
+            <p class="parrafo">También llamadas “nebulosas oscuras”, no son visibles de manera directa. Son aquellas que no emiten luz y que ocultan a las estrellas que contienen. El primer astrónomo en descubrir este tipo de nebulosas fue el alemán William Herschel. Por ejemplo, la nebulosa “cabeza de caballo”.</p>
+            <h3 class="subtitulo">Nebulosas planetarias</h3>
+            <p class="parrafo">Son aquellas que emiten la luz de las estrellas que contienen, luego de que éstas expelen sus capas más externas de gas (su última etapa de vida). Este tipo de nebulosa tiene forma de anillo o burbuja. Por ejemplo, la nebulosa de la “Hélice”.</p>
+        </section>
+
+        <section class="five-section" id="examen">
+            <h2 class="tittle">¡Ponte a prueba!</h2>
+            <p class="parrafo">Es momento que demuestres el experto en nebulosas que eres y pongas a prueba tus conocimientos.</p>
+            <h3 class="subtitulo">¿Qué es una nebulosa?</h3>
+            <label for="estrella">
+                <input type="radio" name="que"> Un conjunto de estrellas.
+            </label>
+
+            <label for="polvo">
+                <input type="radio" name="que"> Una nube gigante de polvo y gas.
+            </label>
+
+            <label for="galaxia">
+                <input type="radio" name="que"> Una nube que tiene en su interior galaxias.
+            </label>
+
+            <h3 class="subtitulo">¿Por qué son importantes las nebulosa?</h3>
+            <label for="gas">
+                <input type="radio" name="por"> Porque a portan energía al universo a través de la emisión de gases.
+            </label>
+
+            <label for="hoyos">
+                <input type="radio" name="por"> Porque disminuyen los hoyos negros.
+            </label>
+
+            <label for="nacimiento">
+                <input type="radio" name="por"> Porque en ellas se forman estrellas o, por el contrario, tienen restos de estrellas en su interior.
+            </label>
+
+            <h3 class="subtitulo">¿De que están constituidas las nebulosas?</h3>
+            <label for="helio">
+                <input type="radio" name="de"> Hidrogeno, helio y polvo estelar en su mayoria.
+            </label>
+
+            <label for="oxigeno">
+                <input type="radio" name="de"> Oxigeno, nitrógeno y carbono.
+            </label>
+
+            <label for="radio">
+                <input type="radio" name="de"> Radio, manganesio y potasio.
+            </label>
+
+            <h3 class="subtitulo">Son aquellas nebulosas que reflejan la luz de las estrellas cercanas</h3>
+            <label for="emi">
+                <input type="radio" name="luz"> De emisión
+            </label>
+
+            <label for="refle">
+                <input type="radio" name="luz"> De reflexión
+            </label>
+
+            <label for="plane">
+                <input type="radio" name="luz"> Planetarias
+            </label>
+
             <br>
-            La astrobiología se refiere a tres preguntas básicas, que se han preguntado en alguna forma por generaciones. La astrobiología es emocionante hoy porque tenemos la tecnología para comenzar a contestar estas preguntas fundamentales
-        </p>
+            <button>Enviar</button>
 
-        <h3 class="tittle-origen" id="universo">Origen del universo</h3>
-        <p>
-            La teoría más conocida sobre el origen del universo se centra en un cataclismo cósmico sin igual en la historia: el Big Bang. Esta teoría surgió de la observación del alejamiento a gran velocidad de otras galaxias respecto a la nuestra en todas direcciones, como si hubieran sido repelidas por una antigua fuerza explosiva. Con el exitoso lanzamiento y despliegue del telescopio espacial James Webb la comunidad científica pretenden obtener más datos sobre el origen del universo. Con esta nueva herramienta en el espacio, los astrónomos pretenden buscar en el universo, tanto en el espacio como en el tiempo, cosas nunca vistas antes. Y en 2023, estas observaciones ya han dado sus frutos y permitido a los científicos saber más sobre el pasado del universo. En abril de 2023, la Agencia Espacial Europea anunció que ya tenían pruebas de siete galaxias que serían más antiguas conocidas hasta la fecha. Según los astrónomos, estas formaciones de estrellas datarían de 650 millones de años después del Big Bang los que "las haría las galaxias más tempranas que se han podido confirmar espectroscópicamente". La teoría más conocida sobre el origen del universo se centra en un cataclismo cósmico sin igual en la historia: el Big Bang. Esta teoría surgió de la observación del alejamiento a gran velocidad de otras galaxias respecto a la nuestra en todas direcciones, como si hubieran sido repelidas por una antigua fuerza explosiva. Con el exitoso lanzamiento y despliegue del telescopio espacial James Webb la comunidad científica pretenden obtener más datos sobre el origen del universo. Con esta nueva herramienta en el espacio, los astrónomos pretenden buscar en el universo, tanto en el espacio como en el tiempo, cosas nunca vistas antes. Y en 2023, estas observaciones ya han dado sus frutos y permitido a los científicos saber más sobre el pasado del universo. En abril de 2023, la Agencia Espacial Europea anunció que ya tenían pruebas de siete galaxias que serían más antiguas conocidas hasta la fecha. Según los astrónomos, estas formaciones de estrellas datarían de 650 millones de años después del Big Bang los que "las haría las galaxias más tempranas que se han podido confirmar espectroscópicamente".
-        </p>
+        </section>
+        </main>
 
-        <h3 class="tittle-estrella" id="estrellas">Origen de las estrellas</h3>
-        <p>
-            Las estrellas no son objetos inmutables. Nacen, envejecen y mueren, aunque estos procesos suceden tan lentamente que no son apreciables en escalas de tiempo humanas. El nacimiento de una estrella, por ejemplo, dura varios cientos de miles de años, y empieza cuando una región del medio interestelar se hace lo suficiente densa y masiva como para que la fuerza de la gravedad rompa el equilibrio en que se encontraba. Cuando esto sucede, el material inicia un proceso de contracción que solo termina al crearse una estrella, en cuyo interior la fuerza de la gravedad es equilibrada mediante la producción de energía por reacciones nucleares. Formación de estrellas El proceso de formación de una estrella sucede dentro de una nube molecular, que es un objeto extraordinariamente opaco. Es por tanto invisible a nuestros ojos, aunque puede ser estudiado mediante observaciones de la radiación infrarroja y radio. Gracias a este tipo de observaciones, los astrónomos han sido capaces de entender (todavía de forma incompleta) los estadios por los que pasa una estrella al nacer, y reconstruir, por tanto, el nacimiento de nuestro Sol hace casi cinco mil millones de años. El proceso de formación de una estrella da lugar no sólo a un objeto central denso (la protoestrella), sino que también forma de manera natural un disco de materia girando a su alrededor. Este disco contiene el material que gira demasiado rápido como para concentrarse en la estrella, y da lugar al cabo de varios millones de años a un sistema planetario como el que forman la Tierra y los demás planetas. En estos primeros estadios, la protoestrella es un objeto muy activo, y produce un viento bipolar formado por dos chorros opuestos de material de alta velocidad. Estos chorros permiten a la estrella liberarse del exceso de giro (momento angular) aportado por el material del disco, que cae lentamente en espiral hacia la protoestrella. Los chorros, además, dispersan parte de la nube materna donde ha nacido la estrella y hacen que ésta, una vez formada, sea visible a nuestros ojos.
-        </p>
-
-        <!--FORMULARIOS - form (se enviará información)-->
-        <form>
-            <p>¿Cuál es la edad del Universo?</p>
-            <label for="edad-universo">
-                <input type="text">
+        <section class="six-section" id="tipos">
+            <h2 class="tittle">¡Escribenos un comentario!</h2>
+            <h3 class="parrafo">¿Te fué util la información? Escribe un comentario y comparte la página.</h3>
+            <label for="comentario">
+                <input type="text" class="come">
                 <button>Enviar</button>
             </label>
+        </section>
 
-            <!-- RADIO - Seleccionar una  -->
-            <p>¿Cuántas misiones Apolo existieron?</p>
-            <!--label- etiqueta para identificar cada respuesta (3 misiones)-->
-            <label for="3-misiones">
-                <!-- input- insetar algo data 
-                atributo name: relaciona que las respuestas
-                permanecen a la maisma pregunta-->
-                <input type="radio" name="apolo"> 3 misiones
-            </label>
-
-            <label for="10-misiones">
-                <input type="radio" name="apolo"> 10 misiones
-            </label>
-
-            <!-- CHECKBOX - Seleccionar varias -->
-            <p>¿Que objetos celestes existen?</p>
-            <label for="galaxias">
-                <input type="checkbox" name="celestes"> Galaxias
-            </label>
-
-            <label for="planetas">
-                <input type="checkbox" name="celestes"> Planetas
-            </label>
-
-            <label for="nebulosas">
-                <input type="checkbox" name="celestes"> Nebulosas
-            </label>   
-            
-            <label for="satelite">
-                <input type="checkbox" name="celestes"> Satelite
-            </label>   
-
-            <label for="plantas">
-                <input type="checkbox" name="celeste"> Plantas
-            </label>
-
-            <label for="agujeros">
-                <input type="checkbox" name="celestes"> Agujeros Negros
-            </label>   
-
-        </form>
-
-    </main>
 </body>
+
+<footer>
+    <ul class="footer-left">
+        <li>Tecnolochicas MX®</li>
+        <li>Todos los derechos reservados</li>
+    </ul>
+
+    <ul class="footer-right">
+        <li>Elaborado por Miriam Martínez Sánchez</li>
+
+    </ul>
+</footer>
 </html>
