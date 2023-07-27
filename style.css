@@ -2,7 +2,8 @@ body{
     margin: 0;
     padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
-	background-image: url(/images/espacio_fondo.jpg); 
+	background-image: url(/images/espacio_fondo.jpg);
+    background-attachment:fixed; 
     font-size: 13px;
 	line-height: 1.5em;
 }
@@ -15,27 +16,49 @@ header{
     justify-content: space-between;
 }
 
-header div .web-name{
-    padding-left: 20px;
-    color: #392759;
-    font-family: 'Bungee Spice', cursive;
-    font-family: 'Quantico', sans-serif;
-    font-family: 'Raleway', sans-serif;
-}
-
-header nav{
+header .nav-l{
+    /*Eliminar viñetas*/
+    list-style:none;
+    width: 300px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: left;
+    align-items: center;
+    /*Altura automática*/
+    height: auto;
 }
 
-header nav .nav-r{
+header .nav-l .logo{
+    background-image: url(/images/estrella.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    padding-left: 20px;
+    /*Contiene a la imagen y adecua el tamaño*/
+    background-position: center;
+    background-size: contain;
+}
+
+header .web-name{
+    margin-left: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #25244A;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #CA92D8;
+}
+
+header .nav-r{
+    display: flex;
+    justify-content: right;
+}
+
+header .nav-r{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header nav .nav-r button{
+header .nav-r button{
     margin-right: 25px;
     color: white;
     background: transparent;
@@ -51,31 +74,48 @@ header nav .nav-r button{
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Bungee Spice', cursive;
-    font-family: 'Quantico', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    cursor: pointer;
 
 }
-header nav .nav-r button{
+header .nav-r button{
     background-color: white; 
     color: black; 
     border: 2px solid #392759;
 }
 
-header nav .nav-r button:hover {
+header .nav-r button:hover {
     background-color: #392759;
     color: white;
 }
 
 
+.tittle-intro{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.parrafo-intro{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
 .first-section {
     box-sizing: border-box;
-	background: white;
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
-    border-radius: 3%;
 }
 
 .slider-box{
@@ -99,18 +139,21 @@ header nav .nav-r button:hover {
 }
 
 .text {
-    background-color:#A997DF;
+    /*background-color:#A997DF;*/
     position: absolute;
-    padding: 0 50px;
+    padding: 0 10px;
+    padding-top: 60px;
     top: 50px;
-    color:#392759; 
+    color:#ffffff; 
+    width: 900px;
+    height: 400px;
+    text-align: center;
 }
 
 .text h2{
-    font-size: 45px;
+    font-size: 75px;
     margin-bottom: 35px;
-    font-family: 'Bungee Spice', cursive;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Handjet', cursive;
 }
 
 .slider-box img{
@@ -138,6 +181,7 @@ header nav .nav-r button:hover {
     font-family: 'Quantico', sans-serif;
     font-family: 'Raleway', sans-serif;
     color: #392F5A;
+    text-shadow: 2px 2px 4px #CA92D8;
     padding-top: 30px;
 }
 
@@ -147,9 +191,23 @@ header nav .nav-r button:hover {
     font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 15px;
     padding-bottom: 17px;
     color: rgb(48, 48, 48);
     font-size: 25px;
+}
+
+.seccion{
+    height: 50px;
+    width: 500px;
+    background-color: #dab5e4;
+}
+
+.seccion-examen{
+    height: 50px;
+    width: 1000px;
+    text-align: center;
+    background-color: #bcafe3;
 }
 
 .parrafo{
@@ -158,14 +216,14 @@ header nav .nav-r button:hover {
     font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     color: rgb(48, 48, 48);
     font-size: 17px;
 }
 
 .second-section{
     box-sizing: border-box;
-    background: white;
+    background: #dadce0;
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
@@ -175,7 +233,7 @@ header nav .nav-r button:hover {
 
 .third-section{
     box-sizing: border-box;
-    background: white;
+    background: #dadce0;
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
@@ -185,7 +243,7 @@ header nav .nav-r button:hover {
 
 .four-section{
     box-sizing: border-box;
-    background: white;
+    background: #dadce0;
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
@@ -195,7 +253,7 @@ header nav .nav-r button:hover {
 
 .five-section{
     box-sizing: border-box;
-    background: white;
+    background: #dadce0;
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
@@ -205,7 +263,7 @@ header nav .nav-r button:hover {
 
 .six-section{
     box-sizing: border-box;
-    background: white;
+    background: #dadce0;
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
@@ -224,17 +282,52 @@ label{
     font-size: 16.8px
 }
 
-button{
+.enviar{
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 17px;
-
+    background: #eb94d0;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9daef5;
+    -webkit-box-shadow: 6px 5px 24px #666666;
+    -moz-box-shadow: 6px 5px 24px #666666;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 15px;
+    padding: 19px;
+    text-decoration: none;
 }
+
+.enviar:hover {
+    background: #2079b0;
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    text-decoration: none;
+  }
+
+  .seccion-boton{
+    text-align: center;
+  }
 
 label .come{
     width: 800px;
     height: 40px;
+}
+.come{
+    background-color: #d3cde5;
+    border: 2px solid #bcafe3; 
+    border-radius: 6px;
 }
 
 footer{

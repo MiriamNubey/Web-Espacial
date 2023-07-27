@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nebulosas</title>
+    <title>Web Espacial: Nebulosas</title>
     <link rel="stylesheet" href="/style.css">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quantico&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:wght@300&family=Quantico&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap" rel="stylesheet">
+
     <link rel="icon" href="/images/estrella.png">
 </head>
 <body>
     <header>
-        <div>
-            <h2 class="web-name">Web Espacial: Nebulosas</h2>
-        </div>
-        <nav>
-            <ul class="nav-r">
-                <li><button onclick="window.location.href = '#descripcion';">¿Qué son?</button></li>
-                <li><button onclick="window.location.href = '#formacion';">¿Cómo se forman?</button></li>
-                <li><button onclick="window.location.href = '#tipos';">Tipos de nebulosa</button></li>
-                <li><button onclick="window.location.href = '#examen';">Examen</button></li>
-                <!--<li><button onclick="window.location.href = '#galeria';">Galeria de imagenes</button></li>-->
-            </ul>
-        </nav>
+        <ul class="nav-l">
+            <li class="web-name">Web Espacial: Nebulosas</li>
+            <li class="logo"><a href=""></a></li>
+        </ul>
+        <ul class="nav-r">
+            <li><button onclick="window.location.href = '#descripcion';">¿Qué son?</button></li>
+            <li><button onclick="window.location.href = '#formacion';">¿Cómo se forman?</button></li>
+            <li><button onclick="window.location.href = '#tipos';">Tipos de nebulosa</button></li>
+            <li><button onclick="window.location.href = '#examen';">Examen</button></li>
+        </ul>
     </header>
 
     <main class="main-content">
         <section class="first-section">
             <!--Carrusel de imagenes-->
         <div class="slider-box">
-            <ul>
+            <ul> 
                 <li>
-                    <img src="https://images8.alphacoders.com/128/1280369.png" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2023/01/10/10/47/space-7709489_1280.jpg" alt="">
                     <div class="text">
-                        <h2>Nebulosas</h2>
+                        <h2>Web Espacial: Nebulosas</h2>
                     </div>
                 </li>
 
@@ -67,17 +69,18 @@
 
         </div>
         <!--Seccion de Descripción General-->
+        <hr>
         <div>
-            <h2 class="tittle">Introducción</h2>
-            <p class="parrafo">Una nebulosa es una nube gigante de polvo y gas en el espacio. Algunas nebulosas provienen del gas y el polvo expulsado por la explosión de una estrella moribunda, como una supernova. Otras nebulosas son regiones donde comienzan a formarse nuevas estrellas. Por esta razón, algunas nebulosas se llaman "viveros de estrellas".</p>
+            <h2 class="tittle-intro">Introducción</h2>
+            <p class="parrafo-intro">Una nebulosa es una nube gigante de polvo y gas en el espacio. Algunas nebulosas provienen del gas y el polvo expulsado por la explosión de una estrella moribunda, como una supernova. Otras nebulosas son regiones donde comienzan a formarse nuevas estrellas. Por esta razón, algunas nebulosas se llaman "viveros de estrellas".</p>
+            <br>
         </div>
+        <hr>
         </section>
         
         <section class="second-section" id="descripcion">
             <h2 class="tittle">¿Que son las nebulosas?</h2>
-            <p class="parrafo">Las nebulosas son concentraciones de gas y de polvo estelar de aspecto similar a una nube, de colores llamativos. Son importantes para el universo debido a que dentro de algunas de ellas se forman las estrellas (como consecuencia de fenómenos de condensación y agregación de la materia). En otros casos, solo contienen restos de estrellas extintas.</p>
-            <p class="parrafo">Las nebulosas se pueden encontrar en cualquier parte del espacio interestelar. En nuestra galaxia (la Vía Láctea), las nebulosas se encuentran a grandes distancias de la Tierra, que se miden en años luz.</p>
-            <p class="parrafo">Sin embargo, es posible contar con imágenes detalladas en las que se aprecia su majestuosidad, gracias a los científicos que operan con instrumentos complejos y sensibles, como el telescopio espacial Hubble.</p>
+            <p class="parrafo">Las nebulosas son concentraciones de gas y de polvo estelar de aspecto similar a una nube, de colores llamativos. Son importantes para el universo debido a que dentro de algunas de ellas se forman las estrellas (como consecuencia de fenómenos de condensación y agregación de la materia). En otros casos, solo contienen restos de estrellas extintas. <br><br>Las nebulosas se pueden encontrar en cualquier parte del espacio interestelar. En nuestra galaxia (la Vía Láctea), las nebulosas se encuentran a grandes distancias de la Tierra, que se miden en años luz.<br><br>Sin embargo, es posible contar con imágenes detalladas en las que se aprecia su majestuosidad, gracias a los científicos que operan con instrumentos complejos y sensibles, como el telescopio espacial Hubble.</p>
 
         </section>
 
@@ -88,20 +91,31 @@
 
         <section class="four-section" id="tipos">
             <h2 class="tittle">Tipos de Nebulosas</h2>
-            <h3 class="subtitulo">Nebulosas de reflexión</h3>
+            <div class="seccion">
+                <h3 class="subtitulo">Nebulosas de reflexión</h3>
+            </div>
             <p class="parrafo">Son aquellas que reflejan la luz de las estrellas cercanas (estrellas que no emiten suficiente radiación). Presentan colores en tonos azulados debido a la forma en que la luz es dispersada por las partículas de polvo de la nebulosa. Por ejemplo, la nebulosa “Pléyades” (o también llamada “siete hermanas”).</p>
-            <h3 class="subtitulo">Nebulosas de emisión</h3>
+            <div class="seccion">
+                <h3 class="subtitulo">Nebulosas de emisión</h3>
+            </div>
             <p class="parrafo">Son las más comunes, aquellas que emiten luz propia debido a la alteración de los átomos de hidrógeno que reciben la radiación ultravioleta de las estrellas. Por ejemplo, la nebulosa “Omega”.</p>
-            <h3 class="subtitulo">Nebulosas de absorción</h3>
+            <div class="seccion">
+                <h3 class="subtitulo">Nebulosas de absorción</h3>
+            </div>
             <p class="parrafo">También llamadas “nebulosas oscuras”, no son visibles de manera directa. Son aquellas que no emiten luz y que ocultan a las estrellas que contienen. El primer astrónomo en descubrir este tipo de nebulosas fue el alemán William Herschel. Por ejemplo, la nebulosa “cabeza de caballo”.</p>
-            <h3 class="subtitulo">Nebulosas planetarias</h3>
+            <div class="seccion">
+                <h3 class="subtitulo">Nebulosas planetarias</h3>
+            </div>
             <p class="parrafo">Son aquellas que emiten la luz de las estrellas que contienen, luego de que éstas expelen sus capas más externas de gas (su última etapa de vida). Este tipo de nebulosa tiene forma de anillo o burbuja. Por ejemplo, la nebulosa de la “Hélice”.</p>
         </section>
 
         <section class="five-section" id="examen">
             <h2 class="tittle">¡Ponte a prueba!</h2>
             <p class="parrafo">Es momento que demuestres el experto en nebulosas que eres y pongas a prueba tus conocimientos.</p>
-            <h3 class="subtitulo">¿Qué es una nebulosa?</h3>
+            <div class="seccion-examen">
+                <h3 class="subtitulo">¿Qué es una nebulosa?</h3>
+            </div>
+            <br>
             <label for="estrella">
                 <input type="radio" name="que"> Un conjunto de estrellas.
             </label>
@@ -114,7 +128,10 @@
                 <input type="radio" name="que"> Una nube que tiene en su interior galaxias.
             </label>
 
-            <h3 class="subtitulo">¿Por qué son importantes las nebulosa?</h3>
+            <div class="seccion-examen">
+                <h3 class="subtitulo">¿Por qué son importantes las nebulosa?</h3>
+            </div>
+            <br>
             <label for="gas">
                 <input type="radio" name="por"> Porque a portan energía al universo a través de la emisión de gases.
             </label>
@@ -127,7 +144,10 @@
                 <input type="radio" name="por"> Porque en ellas se forman estrellas o, por el contrario, tienen restos de estrellas en su interior.
             </label>
 
-            <h3 class="subtitulo">¿De que están constituidas las nebulosas?</h3>
+            <div class="seccion-examen">
+                <h3 class="subtitulo">¿De que están constituidas las nebulosas?</h3>
+            </div>
+            <br>
             <label for="helio">
                 <input type="radio" name="de"> Hidrogeno, helio y polvo estelar en su mayoria.
             </label>
@@ -140,7 +160,10 @@
                 <input type="radio" name="de"> Radio, manganesio y potasio.
             </label>
 
-            <h3 class="subtitulo">Son aquellas nebulosas que reflejan la luz de las estrellas cercanas</h3>
+            <div class="seccion-examen">
+                <h3 class="subtitulo">Son aquellas nebulosas que reflejan la luz de las estrellas cercanas</h3>
+            </div>
+            <br>
             <label for="emi">
                 <input type="radio" name="luz"> De emisión
             </label>
@@ -154,7 +177,9 @@
             </label>
 
             <br>
-            <button>Enviar</button>
+            <div class="seccion-boton">
+                <button class="enviar">Enviar</button>
+            </div>
 
         </section>
         </main>
@@ -163,8 +188,8 @@
             <h2 class="tittle">¡Escribenos un comentario!</h2>
             <h3 class="parrafo">¿Te fué util la información? Escribe un comentario y comparte la página.</h3>
             <label for="comentario">
-                <input type="text" class="come">
-                <button>Enviar</button>
+                <input type="text" class="come" placeholder="Escribe un comentario (๑•ᴗ•๑)">
+                <button class="enviar">Enviar</button>
             </label>
         </section>
 
